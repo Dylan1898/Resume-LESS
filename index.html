@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="style.css" />
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
 <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles2.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,10 +13,15 @@
 </head>
 
 <body>
-    <div class="navigation">
-        <p class="float-left"> Dylan Smith</p>
-        <ul>
-            <a href= #about >
+    <nav class="navar navbar-inverse navbar-fixed-top col-md-12">
+    <div class="navigation container-fluid">
+        <div class="navbar-header">
+        <p class="float-left navbar-brand "> Dylan Smith</p>
+        </div>
+        <ul class = 'nav navbar-nav'>
+            <a href= #home >
+                <li class='active'> Home</li>
+                <a href= #about >
                 <li> About</li>
             </a>
             <a href= #experience>
@@ -29,22 +30,27 @@
             <a href= #work>
                 <li>Work</li>
             </a>
+            <a href= #work>
+                <li><span class=  "glyphicon glyphicon-shopping-cart"></span> Shop</li>
+            </a>
             <a href= #contact>
                 <li>Contact</li>
             </a>
         </ul>
 
+
     </div>
+    </nav>
     
-    <div class ="headshot container clear">
-        <img class ="profile" src= "http://www.shinzoo.com/images002/crafts/cool-patterns/06.jpg">
+    <div id= 'home' class ="headshot container clear col-med-12">
+        <img class ="profile img-rounded" src= "http://www.shinzoo.com/images002/crafts/cool-patterns/06.jpg">
         <ul>
             <li><h1 class ="primary-color">Designer, developer and photographer.</h1></li>
             <li><h3>Currently living in Birmingham, AL.</h3></li>
         </ul>
     </div>
     
-    <div id= "about" class="about container clear">
+    <div id= "about" class="about container clear col-med-12">
        <ul class= "float-left">
             <li class="hello"> Hello</li>
             <li><h2> Dylan Smith</h2></li>
@@ -69,12 +75,12 @@
             <tr>
 
                 <td>
-                    <h3>Platypi
+                    <h3>Platypi <span class="glyphicon glyphicon-link"></span>
                         <hr>
                     </h3>
                 </td>
                 <td>
-                    <h3>Leap Logic Creative
+                    <h3>Platypi <span class="glyphicon glyphicon-link"></span>
                         <hr>
                     </h3>
                 </td>
@@ -106,12 +112,12 @@
             <tr>
 
                 <td>
-                    <h3>Platypi
+                    <h3>Platypi <span class="glyphicon glyphicon-link"></span>
                         <hr>
                     </h3>
                 </td>
                 <td>
-                    <h3>Leap Logic Creative
+                    <h3>Platypi<span class="glyphicon glyphicon-link"></span>
                         <hr>
                     </h3>
                 </td>
@@ -159,7 +165,7 @@
         <h2 class ="inline"> Lets talk!</h2>
         <ul class="inline">
             <li>Let's work together.</li>
-            <li>example@gmail.com</li>
+            <li> <span class= "glyphicon glyphicon-envelope"></span> example@gmail.com</li>
         </ul>
 
         <form class= "fix" action="/action_page.php">
@@ -187,5 +193,9 @@
 
 </body>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>

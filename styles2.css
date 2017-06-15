@@ -70,12 +70,12 @@ hr {
   left: 24%;
 }
 .headshot ul h1 {
-  font-size: 2.7vw;
+  font-size: 4.7vw;
   color: darkorange;
 }
 .headshot ul h3 {
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 2vw;
 }
 .profile {
   height: 35%;
@@ -93,30 +93,38 @@ hr {
   display: inline-block;
   margin-top: 6%;
   margin-right: 5%;
-  margin-left: 13%;
+  margin-left: 10%;
   list-style-type: none;
   text-align: right;
 }
 .about ul li {
   color: black;
 }
-@media screen and (max-width: 900px) {
-  .about .box {
-    width: 100%;
-    text-align: center;
-  }
-}
 .box {
   background-color: #F8F8F8;
-  width: 50%;
+  width: 80%;
   display: inline-block;
   padding: 4%;
   border: 2px solid black;
-  margin: 3em 0;
+  margin: 3em 10%;
+}
+@media all and (min-width: 899px) {
+  .box {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 .hello {
   font-size: 450%;
   margin-bottom: -7%;
+}
+@media all and (max-width: 899px) {
+  .about ul {
+    text-align: center;
+    padding: 0 0;
+    margin: 0 10%;
+    width: 80%;
+  }
 }
 /*experience*/
 .experience {
@@ -146,6 +154,16 @@ hr {
 .work img {
   width: 33%;
   text-align: center;
+}
+@media all and (max-width: 900px) {
+  .work img {
+    width: 49%;
+  }
+}
+@media all and (max-width: 500px) {
+  .work img {
+    width: 100%;
+  }
 }
 /*contact*/
 .contact {
